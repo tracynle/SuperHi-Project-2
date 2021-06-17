@@ -1,5 +1,4 @@
 <!doctype html>
-<html>
 <head>
   <title>{{ page_title }}</title>
   <meta charset="utf-8">
@@ -8,8 +7,12 @@
   <link rel="canonical" href="{{ canonical_url }}">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   {{ content_for_header }} <!-- Header hook for plugins -->
-  <script src="//code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  {{ 'application.css' | asset_url | stylesheet_tag }}
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  {{ 'application.scss.css' | asset_url | stylesheet_tag }}
+  <script
+    src="//code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   {{ 'application.js' | asset_url | script_tag }}
 </head>
 <body>
@@ -19,6 +22,9 @@
     
     {% include 'footer' %}
 
+    {% if template != 'cart' %}
+        {% include 'mini-cart' %}
+    {% endif %}
   </main>
 </body>
 </html>
