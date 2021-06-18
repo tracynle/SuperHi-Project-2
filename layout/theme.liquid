@@ -16,15 +16,18 @@
   {{ 'application.js' | asset_url | script_tag }}
 </head>
 <body>
+
   {% include 'header' %}
+
   <main role="main">
     {{ content_for_layout }}
-    
-    {% include 'footer' %}
 
-    {% if template != 'cart' %}
-        {% include 'mini-cart' %}
-    {% endif %}
+    {% include 'footer' %}
   </main>
+
+  {% if template != 'cart' %}
+    {% include 'mini-cart' %}
+  {% endif %}
+
 </body>
 </html>

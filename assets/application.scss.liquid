@@ -243,7 +243,7 @@
     flex-direction: column;
     // justify-content: center;
     
-    > * {
+    > * { // vertically centers content
       &:first-child {
         margin-top: auto;
       }
@@ -566,7 +566,7 @@
   
   // Cart Toggle Styles
   html.mini-cart-open {
-    overflow: hidden;
+    overflow: hidden; //prevents scrolling
   
     #mini-cart {
       display: block;
@@ -584,7 +584,7 @@
   
     main {
       opacity: 0.3;
-      pointer-events: none;
+      pointer-events: none; //prevents clicking around
     }
   }
   
