@@ -8,7 +8,7 @@
  - Use advanced SCSS features and Shopify's AJAX API
 
 ## Commands
-`theme watch --allow-live flag` will allow any updated changes to reflect on the live theme
+`theme watch --allow-live flag` - will watch and auto-deploy new file changes to the theme.
 
 ## To View Project
 Visit: [link](https://tracy-wellby-project-2.myshopify.com/)
