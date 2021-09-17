@@ -11,6 +11,6 @@
 `theme watch --allow-live flag` - will watch and auto-deploy new file changes to the theme.
 
 ## To View Project
-Visit: [link](https://btox5073p5s90wzw-57629999287.shopifypreview.com)
+Visit: [link](https://tracy-wellby-project-2.myshopify.com/password)
 
 Password: auB25pZKyK1w7JP8
